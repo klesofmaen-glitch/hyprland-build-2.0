@@ -1,0 +1,78 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 55,
+    "spacing": 4,
+    "margin-top": 5,
+    "margin-bottom": 0,
+    "margin-left": 50,
+    "margin-right": 50,
+    
+    "modules-left": ["custom/launcher", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "battery", "tray"],
+    
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1 󰈹",
+            "2": "2 󰊖",
+            "3": "3 󰊌",
+            "4": "4 󰙯",
+            "5": "5 󰢹",
+            "urgent": "󰂭",
+            "focused": "󰮯",
+            "default": "󰊠"
+        }
+    },
+    
+    "custom/launcher": {
+        "format": " ",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+    
+    "clock": {
+        "format": "{:%H:%M\n%d/%m}",
+        "format-alt": "{:%A, %B %d, %Y}",
+        "tooltip-format": "<tt>{calendar}</tt>"
+    },
+    
+    "cpu": {
+        "format": "󰻠 {usage}%",
+        "tooltip": false
+    },
+    
+    "memory": {
+        "format": "󰍛 {}%",
+        "tooltip": false
+    },
+    
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁 Muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+    
+    "tray": {
+        "spacing": 10
+    }
+}

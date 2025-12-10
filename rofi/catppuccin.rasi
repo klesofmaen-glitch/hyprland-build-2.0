@@ -1,0 +1,11 @@
+* {
+    bg-col:  rgba(0, 0, 0, 0.1);
+    bg-col-light: rgba(0, 0, 0,0.01);
+    border-col: #ffffff;
+    selected-col: rgba(220, 220, 220, 0.3);
+    blue: rgba(255, 255, 255, 0.8);
+    fg-col: rgba(255, 255, 255, 0.8);
+    fg-col2: rgba(255, 255, 255, 0.8);
+    grey: rgba(255, 255, 255, 0.9);
+    width: 800;
+}
